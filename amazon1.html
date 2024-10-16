@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ff9900;
+    color: white;
+}
+
+.products {
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    width: 200px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #232f3e;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.image{
+    width: 100%;
+    height:auto;
+    display: flex;
+    gap: 5px;
+}
+.image img{
+    width: 10%;
+    height:100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid white;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+.image img:hover{
+    width: 100%;
+    height: auto;
+} 
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">AMAZON</div>
+        <nav>
+            <ul>
+                <li><a href="amazon.html">Home</a></li>                
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="sell.html">sell</a></li>
+            </ul>
+            
+        </nav>
+        <div class="input-box">
+            <i class="uil uil-search"></i>
+            <input type="text" placeholder="Search here..." />
+            <button class="button">Search</button>
+          </div>
+    </header>
+
+    <main>
+        <section class="hero">
+             <h1>Welcome to Amazon!</h1>
+            <p>Your one-stop shop for all things!</p>
+            <button>Shop Now</button>
+            
+        </section>
+<section>
+    <div class="image">
+        <img src="bb.jpg" alt="">
+        <img src="offers.jpg" alt="">
+        <img src="offers1.jpg" alt="">
+        <img src="sales.jpg" alt="">
+    </div>
+</section>
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-card">
+                <img src="z9.jpg" alt="Product 1">
+                <h3>iQOO z9s pro</h3>
+                <p>₹27,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="vivo.jpg" alt="Product 2">
+                <h3>Vivo v40e</h3>
+                <p>₹28,000</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="samsung.jpg" alt="Product 3">
+                <h3>Samsung Galaxy S23 ultra</h3>
+                <p>₹93,000</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </main>
+<hr>
+    <footer>
+        <p>&copy; 2024 Amazon. All rights reserved.</p>
+
+    </footer>
+</body>
+</html>
